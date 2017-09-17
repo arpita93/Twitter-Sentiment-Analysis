@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import re
 import tweepy
 from tweepy import OAuthHandler
@@ -14,10 +12,10 @@ class TwitterClient(object):
 		Class constructor or initialization method.
 		'''
 		# keys and tokens from the Twitter Dev Console
-		consumer_key = 'DDOCFETlRBfAHfJw0cFf4CdMT'
-		consumer_secret = 'Y2B7oEHUB83mctcHFFs1BCqAYDL3o36FiUfDGl6httREBgQ6cT'
-		access_token = '2493761760-Dts9GWNfxyotpJCfqLpzgtnUOWhAfJc1bZwKOwA'
-		access_token_secret = 'OxZEZzng9nc461FaqrfNQJXOIXkzmbDzB7wRxTnhARCg0'
+		consumer_key = 'Ev79kx8vUQTG5fZs6l2az6KhD'
+		consumer_secret = '9hlouwLuRztTKeUmaBn2wF4tszbK88VlczeF6guDw7XivwEGj9'
+		access_token = '903763115006767104-1qGznvKUF5j0J3Js071HlDIHjCrTRrk'
+		access_token_secret = '	EAr8c0CbqXGTc3RH9mSITXW8cdpuqCZ10jcZMpGAxTJJH'
 
 		# attempt authentication
 		try:
@@ -103,8 +101,7 @@ def main():
 	# percentage of negative tweets
 	print("Negative tweets percentage: {} %".format(100*len(ntweets)/len(tweets)))
 	# percentage of neutral tweets
-	print("Neutral tweets percentage: {} % 
-		".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
+	print("Neutral tweets percentage: {} % ".format(100*(len(tweets) - len(ntweets) - len(ptweets))/len(tweets)))
 
 	# printing first 5 positive tweets
 	print("\n\nPositive tweets:")
